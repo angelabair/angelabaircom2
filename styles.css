@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
+	text-decoration: none;
 }
 
 body {
@@ -37,6 +38,11 @@ h2 {
 	padding-bottom: 1em;
 }
 
+h4 {
+	color: #101020;
+	font-size: 1.25em;
+}
+
 .morning {
 	background: rgba(248,126,35,1);
 	background: -moz-linear-gradient(top, rgba(248,126,35,1) 0%, rgba(252,252,66,1) 100%);
@@ -62,7 +68,7 @@ h2 {
 	
 }
 
-ul {
+.nav-list {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -70,21 +76,20 @@ ul {
 	background-color: #101020;
 }
 
-li  {
+.nav-item  {
 	float: left;
 }
 
-li a {
+.nav-item a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 1em 1em;
-	text-decoration: none;
 	font-size: 1.3em;
 	font-weight: 300;
 }
 
-li a:hover {
+.nav-item a:hover {
 	text-decoration: underline;
 }
 
@@ -93,7 +98,7 @@ li a:hover {
 	height: 35em;
 }
 
-.skyline {
+#header .skyline {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -105,16 +110,42 @@ li a:hover {
 	color: #E4F7FD;
 }
 
-.bio {
+#about .bio {
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: 300;
-	padding-bottom: 1.5em;
+	padding-bottom: 2em;
 }
 
 #projects {
 	background-color: #d3ecff;
-	height: 1000px;
+	padding-bottom: 2em;
+}
+
+#projects .project-list {	
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	justify-content: center;
+	padding: 0 1.5em;
+}
+
+#projects .project-item {
+	text-align: center;
+	padding: 1em;
+	margin: 0 1em 1.5em 1em;
+	max-width: 24em;
+	min-width: 20em;
+}
+
+#projects .thumbnail {
+	background: tomato;
+	padding-bottom: 0.5em;
+	height: 12.5em; 
 }
 
 footer {
