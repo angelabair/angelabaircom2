@@ -138,8 +138,9 @@ h4 {
 	text-align: center;
 	padding: 1em;
 	margin: 0 1em 1.5em 1em;
-	max-width: 24em;
-	min-width: 20em;
+	max-width: 325px;
+	min-width: 275px;
+	width: 33.3%
 }
 
 #projects .thumbnail {
