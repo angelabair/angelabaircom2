@@ -159,21 +159,21 @@ h4 {
 
 #projects .thumbnail img {
 	position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 104%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 104%;
 }
 
 #projects .thumbnail .project-content {
 	position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    opacity: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
 }
 
 #projects .thumbnail .project-content p {
@@ -181,10 +181,10 @@ h4 {
 }
 
 #projects .thumbnail:hover > .project-content {
-    display: block;
-    background: rgba(0,0,0,0.75);
-    color: white;
-    opacity: 1;
+	display: block;
+	background: rgba(0,0,0,0.75);
+	color: white;
+	opacity: 1;
 }
 
 footer {
