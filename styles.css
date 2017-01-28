@@ -47,6 +47,8 @@ h4 {
 	background: rgba(248,126,35,1);
 	background: -moz-linear-gradient(top, rgba(248,126,35,1) 0%, rgba(252,252,66,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(248,126,35,1) 0%, rgba(252,252,66,1) 100%);
+	background: -o-linear-gradient(top, rgba(248,126,35,1) 0%, rgba(252,252,66,1) 100%);
+	background: -ms-linear-gradient(top, rgba(248,126,35,1) 0%, rgba(252,252,66,1) 100%);
 	background: linear-gradient(to bottom, rgba(248,126,35,1) 0%,  rgba(252,252,66,1) 100%);
 }
 
@@ -54,6 +56,8 @@ h4 {
 	background: rgba(1,105,144,1);
 	background: -moz-linear-gradient(top, rgba(1,105,144,1) 0%, rgba(135,199,223,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(1,105,144,1) 0%, rgba(135,199,223,1) 100%);
+	background: -o-linear-gradient(top, rgba(1,105,144,1) 0%, rgba(135,199,223,1) 100%);
+	background: -ms-linear-gradient(top, rgba(1,105,144,1) 0%, rgba(135,199,223,1) 100%);
 	background: linear-gradient(to bottom, rgba(1,105,144,1) 0%, rgba(135,199,223,1) 100%);
 }
 
@@ -61,6 +65,8 @@ h4 {
 	background: rgba(84,15,96,1);
 	background: -moz-linear-gradient(top, rgba(84,15,96,1) 0%, rgba(220,47,141,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(84,15,96,1) 0%, rgba(220,47,141,1) 100%);
+	background: -o-linear-gradient(top, rgba(84,15,96,1) 0%, rgba(220,47,141,1) 100%);
+	background: -ms-linear-gradient(top, rgba(84,15,96,1) 0%, rgba(220,47,141,1) 100%);
 	background: linear-gradient(to bottom, rgba(84,15,96,1) 0%, rgba(220,47,141,1) 100%);
 }
 
@@ -126,6 +132,7 @@ h4 {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
+	display: -o-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
@@ -144,9 +151,41 @@ h4 {
 }
 
 #projects .thumbnail {
+	position: relative;
 	background: tomato;
 	padding-bottom: 0.5em;
-	height: 12.5em; 
+	height: 12em;
+}
+
+#projects .thumbnail img {
+	position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 104%;
+}
+
+#projects .thumbnail .project-content {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+#projects .thumbnail:hover > .project-content {
+    display: block;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    /*padding: 5px;*/
+    opacity: 1;
+}
+
+#projects .thumbnail:hover {
+	/*opacity: 1;*/
 }
 
 footer {
